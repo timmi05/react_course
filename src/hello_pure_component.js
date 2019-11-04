@@ -1,5 +1,3 @@
-// import React from "react"
-
 class HelloPure extends React.PureComponent {
     render() {
         return <div>{`Hello, ${this.props.toWhat}`}</div>;

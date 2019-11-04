@@ -1,5 +1,3 @@
-// import React from "react"
-
 const qwerty = ({toWhat}) => <span>{`Hello, ${toWhat}`}</span>;
 
 ReactDOM.render(
