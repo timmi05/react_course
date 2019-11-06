@@ -1,10 +1,7 @@
-class HelloPure extends React.PureComponent {
+import * as React from "react";
+
+export class HelloPure extends React.PureComponent {
     render() {
-        return <div>{`Hello, ${this.props.toWhat}`}</div>;
+        return <span>{`Hello, pureComponent ${this.props.toWhat}`}</span>;
     }
 }
-
-ReactDOM.render(
-    <HelloPure toWhat="PureComponent world"/>,
-    document.getElementById('component_way3')
-);
