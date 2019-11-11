@@ -7,16 +7,16 @@ module.exports = {
     context: path.join(__dirname, 'src'),
 
     entry: {
-        app: "./index.jsx"
+        app: './index.jsx'
     },
 
     output: {
         path: __dirname + '/dist',
-        filename: "main.js"
+        filename: 'main.js'
     },
 
     resolve: {
-        extensions: [".js", ".jsx"]
+        extensions: ['.js', '.jsx']
     },
 
     plugins: [
@@ -30,9 +30,17 @@ module.exports = {
         rules: [
             {
                 test: /\.jsx?$/,
-                loader: "babel-loader",
+                loader: 'babel-loader',
                 exclude: /node_modules/
-            }
+            },
+            {
+                test: /\.css$/,
+                use: [ 'style-loader', 'css-loader'],
+            },
+           {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [ 'file-loader'],
+            },
         ]
     }
 }

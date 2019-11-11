@@ -1,6 +1,6 @@
-import * as React from "react";
-import * as ReactDom from "react-dom";
-import {Hello} from "./hello_component";
+import * as React from 'react';
+import * as ReactDom from 'react-dom';
+import {Hello} from './hello_component';
 
-ReactDom.render(<Hello toWhat="world"/>,
-document.getElementById("app"));
+ReactDom.render(<Hello toWhat='world'/>,
+document.getElementById('app'));

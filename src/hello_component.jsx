@@ -1,6 +1,6 @@
-import * as React from "react";
-import {HelloFunction} from "./hello_function_element.js";
-import {HelloPure} from "./hello_pure_component.js";
+import * as React from 'react';
+import {HelloFunction} from './hello_function_element.js';
+import {HelloPure} from './hello_pure_component.js';
 
 export class Hello extends React.Component {
     render() {
