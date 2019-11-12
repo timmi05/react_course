@@ -15,6 +15,10 @@ module.exports = {
         filename: 'main.js'
     },
 
+    resolve: {
+        modules: ['node_modules']
+    },
+
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
@@ -29,9 +33,8 @@ module.exports = {
                 loader: 'babel-loader',
                 exclude: /node_modules/,
                 resolve: {
-                        modules: ['node_modules' ],
-                        extensions: ['.js', '.jsx']
-                    },
+                              extensions: ['.js', '.jsx']
+                },
             },
             {
                 test: /\.css$/,
