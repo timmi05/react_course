@@ -1,6 +1,3 @@
-const qwerty = ({toWhat}) => <span>{`Hello, ${toWhat}`}</span>;
+import * as React from 'react';
 
-ReactDOM.render(
-    qwerty({toWhat: 'Function world'}),
-    document.getElementById('component_way4')
-);
+export const HelloFunction = ({toWhat}) => <span>{`Hello, functions ${toWhat}`}</span>;
