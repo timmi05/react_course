@@ -1,0 +1,8 @@
+.app-container{
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.app-container-lower-panel{
+    background-color: #424242;
+}

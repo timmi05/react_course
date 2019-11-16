@@ -1,0 +1,9 @@
+.product-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.product-container-cover{
+    height: 400px;
+    width: 250px;
+}

@@ -1,0 +1,5 @@
+.result-body{
+    display: flex;
+    flex-direction: wrap;
+    background: #232323;
+}
