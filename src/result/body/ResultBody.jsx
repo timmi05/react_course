@@ -2,14 +2,27 @@ import React from 'react';
 import ResultItem from './ResultItem';
 import './result_body.css'
 
-const ResultBody = (props) =>
-    <div className="result-body">
-        <ResultItem
-            poster_path = 'https://image.tmdb.org/t/p/w500/uJ6OnE3CzGWq6buLINAbdBqa0gV.jpg'
-            title = 'Solo: A Star Wars Story'
-            tagline = 'A Star Wars'
-            release_date = '2018'
-        />
-    </div>
+const ResultBody = (props) => {
+    const data = props.data;
+    const list = <ul className='result-body-list'>
+        { data.map((movie) =>
+            < ResultItem key={ movie.id }
+                         poster_path={ movie.poster_path }
+                         title={ movie.title }
+                         tagline={ movie.tagline }
+                         release_date={ movie.release_date }
+            />
+            )
+        }
+    </ul>;
+
+    const emptyBody = <div className='result-body-empty'>No films found</div>;
+
+    const content = data.length >0 ? list : emptyBody;
+
+    return (
+        <div className='result-body'>{ content }</div>
+    )
+};
 
 export default ResultBody

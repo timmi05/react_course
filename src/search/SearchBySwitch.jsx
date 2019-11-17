@@ -10,29 +10,31 @@ export default class SearchBYSwitch extends Component {
 
     handleSubmit1 = (event) => {
       this.setState({disabled: true});
-    }
+    };
 
     handleSubmit2 = (event) => {
       this.setState({disabled: false});
-    }
+    };
 
     render() {
       return (
-        <span className='search-by-switch'>
-            <span>SEARCH BY </span>
-            <Button
-            label = 'TITLE'
-            classes = 'search-by-switch-left-button'
-            handleSubmit = {this.handleSubmit1}
-            disabled = {this.state.disabled}
-            />
-            <Button
-            label = 'GENRE'
-            classes = 'search-by-switch-right-button'
-            handleSubmit = {this.handleSubmit2}
-            disabled = {!this.state.disabled}
-            />
-        </span>
+        <div className='search-by-switch'>
+            <span className='search-by-switch-label'>SEARCH BY </span>
+            <div className = 'search-by-switch-buttons'>
+                <Button
+                label = 'TITLE'
+                classes = 'search-by-switch-button search-by-switch-left-button'
+                handleSubmit = {this.handleSubmit1}
+                disabled = {this.state.disabled}
+                />
+                <Button
+                label = 'GENRE'
+                classes = 'search-by-switch-button search-by-switch-right-button'
+                handleSubmit = {this.handleSubmit2}
+                disabled = {!this.state.disabled}
+                />
+            </div>
+        </div>
       );
     }
 }

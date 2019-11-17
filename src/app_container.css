@@ -5,4 +5,9 @@
 
 .app-container-lower-panel{
     background-color: #424242;
+    text-align: center;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

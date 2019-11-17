@@ -1,0 +1,21 @@
+.item-info-title-year{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.item-info-title{
+    font-size: 22px;
+}
+
+.item-info-release-year{
+    font-size: 14px;
+    border: 1px solid #ffffff;
+    padding: 2px 10px;
+    border-radius: 3px;
+}
+
+.item-info-tagline{
+    font-size: 16px;
+}

@@ -1,4 +1,9 @@
+.result-item{
+    margin-bottom: 40px;
+}
+
 .result-item-cover{
     height: 500px;
-    width: 300px;
+    width: 350px;
+    margin-bottom: 20px;
 }

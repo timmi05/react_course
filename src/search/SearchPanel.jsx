@@ -12,17 +12,18 @@ export default class SearchPanel extends Component {
 
     handleChange = (event) => {
       this.setState({value: event.target.value});
-    }
+    };
 
-    handleSubmit1 = (event) => {
+    handleSubmit = () => {
       this.setState({disabled: true});
-    }
+    };
 
     render() {
       return (
-       <span className='search-panel'>
-           <div>
-               <input type="text" value={ this.state.value } onChange={ this.handleChange } />
+       <div className='search-panel'>
+           <div className='search-panel-label'>FINED YOUR MOVIE</div>
+           <div className='search-panel-main'>
+               <input className='search-panel-input' type='text' value={ this.state.value } onChange={ this.handleChange } />
                <Button
                label = 'SEARCH'
                classes = 'search-panel-button'
@@ -31,7 +32,7 @@ export default class SearchPanel extends Component {
                />
            </div>
            <SearchBySwitch/>
-       </span>
+       </div>
       );
     }
 }

@@ -9,6 +9,6 @@ const DigitalInfo = (props) => {
             <span className="digital-info-meaning">{ meaning }</span>
         </span>
     );
-}
+};
 
 export default DigitalInfo

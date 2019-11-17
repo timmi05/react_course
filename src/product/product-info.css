@@ -1,0 +1,22 @@
+.product-info {
+    padding: 30px 50px;
+    width: 80%;
+}
+
+.product-info-title{
+    font-size: 34px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.product-info-title-rating{
+    display: flex;
+    flex-direction: row;
+}
+
+.product-info-tagline{
+    margin-bottom: 25px;
+    font-size: 20px;
+}
