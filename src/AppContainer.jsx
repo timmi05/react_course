@@ -4,7 +4,7 @@ import ResultContainer from './result/ResultContainer';
 import AppLabel from './component/AppLabel';
 import './app_container.css';
 
-const AppContainer = (props) => {
+const AppContainer = props => {
     const { productSelected, genre, data } = props;
     return(
         <div className='app-container'>

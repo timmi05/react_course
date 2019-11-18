@@ -11,22 +11,9 @@ export default class ErrorBoundary extends Component {
         return { hasError: true };
     }
 
-    // componentDidCatch(error, errorInfo) {
-    //     this.setState({
-    //         error: error,
-    //         errorInfo: errorInfo
-    //     });
-    //     // logErrorToMyService(error, errorInfo);
-    // }
-
-
     render() {
         if (this.state.hasError) {
-            return <AppContainer
-                productSelected = { false }
-                genre={ null }
-                data = { [] }
-            />;
+            return <h1>Something went wrong :(</h1>;
         }
         return this.props.children;
     }

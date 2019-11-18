@@ -3,18 +3,3 @@
     padding:  60px 50px 1px;
     min-height: 600px;
 }
-
-.result-body-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-inline-start: 0;
-}
-
-.result-body-empty{
-    font-size: 60px;
-    height: 10em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}

@@ -4,7 +4,7 @@ import DurationAndRelease from './DurationAndRelease';
 import ProductDescription from './ProductDescription';
 import './product-info.css'
 
-const ProductInfo = (props) => {
+const ProductInfo = props => {
     const { runtime, release_date, overview, title, vote_average, tagline} = props;
     return (
          <div className='product-info'>

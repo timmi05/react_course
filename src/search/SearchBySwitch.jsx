@@ -5,14 +5,14 @@ import './search_by_switch.css';
 export default class SearchBYSwitch extends Component {
    constructor(props) {
      super(props);
-     this.state = {value: '', disabled: false};
+     this.state = { disabled: false };
    }
 
-    handleSubmit1 = (event) => {
+    handleSubmit1 = event => {
       this.setState({disabled: true});
     };
 
-    handleSubmit2 = (event) => {
+    handleSubmit2 = event => {
       this.setState({disabled: false});
     };
 

@@ -10,7 +10,7 @@ export default class SearchPanel extends Component {
 
     state = {value: '', disabled: false};
 
-    handleChange = (event) => {
+    handleChange = event => {
       this.setState({value: event.target.value});
     };
 

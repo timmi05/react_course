@@ -2,14 +2,12 @@ import React from 'react';
 import SearchPanel from './search/SearchPanel';
 import ProductContainer from './product/ProductContainer';
 import AppLabel from './component/AppLabel';
+import SearchLink from './component/SearchLink';
 import './header_container.css';
 
-const HeaderContainer = (props) => {
+const HeaderContainer = props => {
     const { productSelected } = props;
     const Content = productSelected ? ProductContainer : SearchPanel;
-    const SearchRef = productSelected
-        ? () => <a  className='header-container-search-ref' href=''>search</a>
-        : () => <a/>;
 
     return (
         <div className='header-container'>
@@ -18,7 +16,9 @@ const HeaderContainer = (props) => {
                 < AppLabel />
                 </span>
                 <span className='header-container-search'>
-                    <SearchRef/>
+                    < SearchLink
+                    productSelected = { productSelected }
+                    />
                 </span>
             </div>
             < Content
