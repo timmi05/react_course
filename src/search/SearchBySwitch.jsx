@@ -1,40 +1,38 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Button from '../component/Button'
 import './search_by_switch.css';
 
-export default class SearchBYSwitch extends Component {
-   constructor(props) {
-     super(props);
-     this.state = { disabled: false };
-   }
+const SearchBYSwitch = () => {
 
-    handleSubmit1 = event => {
-      this.setState({disabled: true});
+    const [disabled, setDisabled] = useState(false);
+
+    const handleSubmit1 = () => {
+        setDisabled(true);
     };
 
-    handleSubmit2 = event => {
-      this.setState({disabled: false});
+    const handleSubmit2 = () => {
+        setDisabled(false);
     };
 
-    render() {
-      return (
+    return (
         <div className='search-by-switch'>
             <span className='search-by-switch-label'>SEARCH BY </span>
             <div className = 'search-by-switch-buttons'>
                 <Button
                 label = 'TITLE'
                 classes = 'search-by-switch-button search-by-switch-left-button'
-                handleSubmit = {this.handleSubmit1}
-                disabled = {this.state.disabled}
+                handleSubmit = { handleSubmit1 }
+                disabled = { disabled }
                 />
                 <Button
                 label = 'GENRE'
                 classes = 'search-by-switch-button search-by-switch-right-button'
-                handleSubmit = {this.handleSubmit2}
-                disabled = {!this.state.disabled}
+                handleSubmit = {handleSubmit2}
+                disabled = {!disabled}
                 />
             </div>
         </div>
-      );
-    }
-}
+    );
+};
+
+export default SearchBYSwitch

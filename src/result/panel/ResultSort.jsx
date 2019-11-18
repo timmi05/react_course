@@ -1,23 +1,21 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Button from '../../component/Button'
 import './result_sort.css'
 
-export default class ResultSort extends Component {
-    constructor(props) {
-     super(props);
-     this.state = { disabled: false };
-   }
+const ResultSort = props => {
 
-    handleSubmit1 = event => {
-      this.setState({disabled: true});
+    const { productSelected } = props;
+    const [disabled, setDisabled] = useState(false);
+
+    const handleSubmit1 = () => {
+        setDisabled(true);
     };
 
-    handleSubmit2 = event => {
-      this.setState({disabled: false});
+    const handleSubmit2 = () => {
+        setDisabled(false);
     };
 
-    render() {
-    if ( this.props.productSelected )
+    if ( productSelected )
     return(
         <a/>
     );
@@ -29,17 +27,18 @@ export default class ResultSort extends Component {
                 <Button
                 label = 'RELEASE DATE'
                 classes = 'result-sort-button result-sort-left-button'
-                handleSubmit = {this.handleSubmit1}
-                disabled = {this.state.disabled}
+                handleSubmit = { handleSubmit1 }
+                disabled = { disabled }
                 />
                 <Button
                 label = 'RATING'
                 classes = 'result-sort-button result-sort-right-button'
-                handleSubmit = {this.handleSubmit2}
-                disabled = {!this.state.disabled}
+                handleSubmit = { handleSubmit2 }
+                disabled = { !disabled }
                 />
             </div>
         </span>
       );
-    }
-}
+};
+
+export default ResultSort

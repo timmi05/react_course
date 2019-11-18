@@ -1,38 +1,36 @@
-import React, { Component } from 'react';
+import React, { useState }  from 'react';
 import SearchBySwitch from './SearchBySwitch';
 import Button from '../component/Button'
 import './search_panel.css';
 
-export default class SearchPanel extends Component {
-   constructor(props) {
-     super(props);
-   }
+const SearchPanel = () => {
 
-    state = {value: '', disabled: false};
+    const [value, setValue] = useState('');
+    const [disabled, setDisabled] = useState(false);
 
-    handleChange = event => {
-      this.setState({value: event.target.value});
+    const handleChange = event => {
+      setValue(event.target.value);
     };
 
-    handleSubmit = () => {
-      this.setState({disabled: true});
+    const handleSubmit = () => {
+      setDisabled(true);
     };
 
-    render() {
-      return (
-       <div className='search-panel'>
+    return (
+        <div className='search-panel'>
            <div className='search-panel-label'>FINED YOUR MOVIE</div>
            <div className='search-panel-main'>
-               <input className='search-panel-input' type='text' value={ this.state.value } onChange={ this.handleChange } />
+               <input className='search-panel-input' type='text' value={ value } onChange={ handleChange } />
                <Button
                label = 'SEARCH'
                classes = 'search-panel-button'
-               handleSubmit = { this.handleSubmit }
-               disabled = { this.state.disabled }
+               handleSubmit = { handleSubmit }
+               disabled = { disabled }
                />
            </div>
            <SearchBySwitch/>
-       </div>
-      );
-    }
-}
+        </div>
+    );
+};
+
+export default SearchPanel
