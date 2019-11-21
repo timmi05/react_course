@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppContainer } from './AppContainer';
-import  ErrorBoundary from  './error/ErrorBoundary'
+import { ErrorBoundary } from  './error/ErrorBoundary'
 import './App.css';
 
 export const App = () => {
