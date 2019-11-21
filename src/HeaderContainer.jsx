@@ -1,13 +1,13 @@
 import React from 'react';
-import SearchPanel from './search/SearchPanel';
-import ProductContainer from './product/ProductContainer';
-import AppLabel from './component/AppLabel';
-import SearchLink from './component/SearchLink';
-import './header_container.css';
+import { SearchPanel } from './search/SearchPanel';
+import {Product } from './product/Product';
+import { AppLabel } from './component/AppLabel';
+import { SearchLink } from './component/SearchLink';
+import './HeaderContainer.css';
 
-const HeaderContainer = props => {
+export const HeaderContainer = props => {
     const { productSelected } = props;
-    const Content = productSelected ? ProductContainer : SearchPanel;
+    const Content = productSelected ? Product : SearchPanel;
 
     return (
         <div className='header-container'>
@@ -23,12 +23,12 @@ const HeaderContainer = props => {
             </div>
             < Content
                 runtime = '145'
-                release_date = '2019'
+                releaseDate = '2019'
                 description = 'Best film of year'
                 title = 'Guardians of the galaxy: VOL. 3'
                 tagline = 'Tagline'
-                vote_average = '4'
-                poster_path = 'https://image.tmdb.org/t/p/w500/ldoY4fTZkGISMidNw60GHoNdgP8.jpg'
+                voteAverage = '4'
+                posterPath = 'https://image.tmdb.org/t/p/w500/ldoY4fTZkGISMidNw60GHoNdgP8.jpg'
                 overview = "The third film based on Marvel's Guardians of the Galaxy.
                  The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's Guardians of
                   the Galaxy. The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's
@@ -37,5 +37,3 @@ const HeaderContainer = props => {
          </div>
     );
 };
-
-export default HeaderContainer

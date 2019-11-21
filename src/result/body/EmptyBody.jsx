@@ -1,8 +1,8 @@
 import React from 'react';
 import classnames from 'classnames';
-import './empty_body.css'
+import './EmptyBody.css'
 
-const EmptyBody = props => {
+export const EmptyBody = props => {
     const composedClassName = classnames(
         props.classesName,
         'empty-body'
@@ -11,4 +11,3 @@ const EmptyBody = props => {
     <div className={ composedClassName }>No films found</div>
     )
 };
-export default EmptyBody

@@ -8,5 +8,3 @@ export const ProductDescription = props => {
     </span>
     );
 };
-
-export default ProductDescription

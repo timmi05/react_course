@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import Button from '../../component/Button'
-import './result_sort.css'
+import { Button } from '../../component/Button'
+import './ResultSort.css'
 
-const ResultSort = props => {
+export const ResultSort = props => {
 
     const { productSelected } = props;
     const [disabled, setDisabled] = useState(false);
 
-    const handleSubmit1 = () => {
+    const SortByReleaseDate = () => {
         setDisabled(true);
     };
 
-    const handleSubmit2 = () => {
+    const SortByRating = () => {
         setDisabled(false);
     };
 
@@ -27,18 +27,16 @@ const ResultSort = props => {
                 <Button
                 label = 'RELEASE DATE'
                 classes = 'result-sort-button result-sort-left-button'
-                handleSubmit = { handleSubmit1 }
+                handleSubmit = { SortByReleaseDate }
                 disabled = { disabled }
                 />
                 <Button
                 label = 'RATING'
                 classes = 'result-sort-button result-sort-right-button'
-                handleSubmit = { handleSubmit2 }
+                handleSubmit = { SortByRating }
                 disabled = { !disabled }
                 />
             </div>
         </span>
       );
 };
-
-export default ResultSort

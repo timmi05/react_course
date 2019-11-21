@@ -1,13 +1,13 @@
 import React from 'react';
-import './item_info.css'
+import './ItemInfo.css'
 
-const ItemInfo = props => {
-     const { title, tagline, release_date } = props;
+export const ItemInfo = props => {
+     const { title, tagline, releaseDate } = props;
      return (
           <div className='item-info'>
             <div className='item-info-title-year'>
                 <div className='item-info-title'> { title } </div>
-                <span className='item-info-release-year'>{ release_date }</span>
+                <span className='item-info-release-year'>{ releaseDate }</span>
             </div>
             <div className='item-info-tagline'>
                 { tagline }
@@ -15,5 +15,3 @@ const ItemInfo = props => {
          </div>
      );
  };
-
-export default ItemInfo

@@ -1,11 +1,11 @@
 import React from 'react';
-import ResultPanel from './panel/ResultPanel';
-import ResultBody from './body/ResultBody';
+import { ResultPanel } from './panel/ResultPanel';
+import { ResultBody } from './body/ResultBody';
 
-const ResultContainer = props => {
+export const Result = props => {
     const { productSelected, genre, data } = props;
     return(
-        <div className='result-container'>
+        <div className='result'>
              <ResultPanel
              productSelected = { productSelected }
              genre = { genre }
@@ -17,5 +17,3 @@ const ResultContainer = props => {
         </div>
     );
 };
-
-export default ResultContainer

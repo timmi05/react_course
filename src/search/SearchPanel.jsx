@@ -1,9 +1,9 @@
 import React, { useState }  from 'react';
-import SearchBySwitch from './SearchBySwitch';
-import Button from '../component/Button'
-import './search_panel.css';
+import { SearchBySwitch } from './SearchBySwitch';
+import { Button } from '../component/Button'
+import './SearchPanel.css';
 
-const SearchPanel = () => {
+export const SearchPanel = () => {
 
     const [value, setValue] = useState('');
     const [disabled, setDisabled] = useState(false);
@@ -32,5 +32,3 @@ const SearchPanel = () => {
         </div>
     );
 };
-
-export default SearchPanel

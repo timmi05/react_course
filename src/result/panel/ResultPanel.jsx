@@ -1,9 +1,9 @@
 import React from 'react';
-import ResultInfo from './ResultInfo';
-import ResultSort from './ResultSort';
-import './result_panel.css'
+import { ResultInfo } from './ResultInfo';
+import { ResultSort } from './ResultSort';
+import './ResultPanel.css'
 
-const ResultPanel = props => {
+export const ResultPanel = props => {
     const { productSelected, genre, data } = props;
     return(
      <div className='result-panel'>
@@ -18,4 +18,3 @@ const ResultPanel = props => {
     </div>
     )
 };
-export default ResultPanel

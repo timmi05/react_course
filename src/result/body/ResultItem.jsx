@@ -1,21 +1,19 @@
 import React from 'react';
-// import { ItemInfo } from './ItemInfo'
-import ItemInfo from './ItemInfo'
-import './result_item.css'
+import { ItemInfo } from './ItemInfo'
+// import ItemInfo from './ItemInfo'
+import './ResultItem.css'
 
-const ResultItem = props => {
-    const { poster_path, tagline, title, release_date } = props;
+export const ResultItem = props => {
+    const { posterPath, tagline, title, releaseDate } = props;
     return (
          <div className='result-item'>
-            <img className='result-item-cover' src={ poster_path } alt={ title }/>
+            <img className='result-item-cover' src={ posterPath } alt={ title }/>
          <ItemInfo
-         poster_path = { poster_path }
+         posterPath = { posterPath }
          tagline = { tagline }
          title = { title }
-         release_date = { release_date }
+         releaseDate = { releaseDate }
          />
         </div>
     );
 };
-
-export default ResultItem

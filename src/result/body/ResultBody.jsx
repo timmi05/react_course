@@ -1,24 +1,21 @@
 import React from 'react';
-import ResultItem from './ResultItem';
-import ResultList from './ResultList';
-import EmptyBody from './EmptyBody';
-import './result_body.css'
+import { ResultList } from './ResultList';
+import { EmptyBody } from './EmptyBody';
+import './ResultBody.css'
 
-const ResultBody = props => {
+export const ResultBody = props => {
     const { data } = props;
 
-   if (data.length > 0)
-    return (
+   if (data.length === 0)
+       return (
+           < EmptyBody
+               classesName = 'result-body'
+           />
+       );
+       return (
         <ResultList
          data = { data }
          classesName = 'result-body'
-        />
+       />
     );
-    return (
-            < EmptyBody
-             classesName = 'result-body'
-            />
-        )
 };
-
-export default ResultBody

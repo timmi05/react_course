@@ -1,15 +1,17 @@
 import React from 'react';
-import './result_info.css'
+import './ResultInfo.css'
 
 export const ResultInfo = props => {
     const { productSelected, genre, data } = props;
-    const count = productSelected ? null : data.length;
-    const massage = count && count !== 0 ? `${ count } movie found` : genre ? `Film by ${ genre } genre` : '';
+
     return (
         <span className='result-info'>
-        { massage }
+        { getResultMessage(productSelected, genre, data) }
         </span>
     );
 };
 
-export default ResultInfo
+const getResultMessage = (productSelected, genre, data) =>{
+    const count = productSelected ? 0 : data.length;
+    return count !== 0 ? `${ count } movie found` : genre ? `Film by ${ genre } genre` : '';
+};

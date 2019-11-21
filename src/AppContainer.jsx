@@ -1,17 +1,17 @@
 import React from 'react';
-import HeaderContainer from './HeaderContainer';
-import ResultContainer from './result/ResultContainer';
-import AppLabel from './component/AppLabel';
-import './app_container.css';
+import { HeaderContainer } from './HeaderContainer';
+import { Result } from './result/Result';
+import { AppLabel } from './component/AppLabel';
+import './AppContainer.css';
 
-const AppContainer = props => {
+export const AppContainer = props => {
     const { productSelected, genre, data } = props;
     return(
         <div className='app-container'>
              <HeaderContainer
              productSelected = { productSelected }
              />
-             <ResultContainer
+             <Result
              productSelected = { productSelected }
              genre = { genre }
              data = { data }
@@ -22,5 +22,3 @@ const AppContainer = props => {
         </div>
     )
 };
-
-export default AppContainer

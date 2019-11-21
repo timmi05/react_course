@@ -1,17 +1,15 @@
 import React from 'react';
-import './search_link.css';
+import './SearchLink.css';
 
-const SearchLink = props => {
+export const SearchLink = props => {
     const { productSelected } = props;
 
-    if ( productSelected ) {
+    if ( !productSelected ) {
+        return (
+            <a/>
+        );
+    }
     return (
             <a  className='search-link' href=''>search</a>
         )
-    }
-    return (
-        <a/>
-    );
 };
-
-export default SearchLink

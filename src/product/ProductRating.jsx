@@ -1,11 +1,9 @@
 import React from 'react';
-import './product_rating.css'
+import './ProductRating.css'
 
-const ProductRating = props => {
+export const ProductRating = props => {
     const { rating } = props;
     return (
          <span className='product-rating' >{ rating }</span>
     );
 };
-
-export default ProductRating

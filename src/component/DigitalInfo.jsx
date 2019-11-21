@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DigitalInfo = props => {
+export const DigitalInfo = props => {
     const { value, meaning } = props;
     return (
          <span className='digital-info'>
@@ -9,5 +9,3 @@ const DigitalInfo = props => {
         </span>
     );
 };
-
-export default DigitalInfo

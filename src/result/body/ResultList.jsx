@@ -1,18 +1,18 @@
 import React from 'react';
-import ResultItem from './ResultItem';
-import './result_list.css'
+import { ResultItem } from './ResultItem';
+import './ResultList.css'
 
-const ResultList = props => {
+export const ResultList = props => {
     const { data, classesName } = props;
     return (
         <div className={ classesName }>
             <ul className='result-list'>
              { data.map((movie) =>
                  < ResultItem key={ movie.id }
-                  poster_path={ movie.poster_path }
+                  posterPath={ movie.posterPath }
                   title={ movie.title }
                   tagline={ movie.tagline }
-                  release_date={ movie.release_date }
+                  releaseDate={ movie.releaseDate }
                  />
                  )
              }
@@ -20,5 +20,3 @@ const ResultList = props => {
          </div>
     )
 };
-
-export default ResultList

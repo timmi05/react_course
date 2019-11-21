@@ -1,8 +1,8 @@
 import React from 'react';
-import './button.css';
+import './Button.css';
 import classnames from 'classnames';
 
-const Button = props => {
+export const Button = props => {
 
     const { label, classes, handleSubmit, disabled } = props;
     const composedClassName = classnames(
@@ -15,4 +15,3 @@ const Button = props => {
      disabled={ disabled }>{ label }</button>
     );
 };
-export default Button

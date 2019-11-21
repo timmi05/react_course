@@ -1,10 +1,8 @@
 import React from 'react';
-import './app_label.css';
+import './AppLabel.css';
 
-const AppLabel = () =>
+export const AppLabel = () =>
         <div className='app-label'>
             <span className='app-label-start'>netflix</span>
             <span className='app-label-end'>roulette</span>
         </div>;
-
-export default AppLabel
