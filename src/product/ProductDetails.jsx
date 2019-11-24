@@ -1,6 +1,6 @@
 import React from 'react';
 import { DigitalInfo } from '../component/DigitalInfo';
-import './DurationAndRelease.css'
+import './ProductDetails.css'
 
 export const ProductDetails = props => {
     const { runtime, releaseDate } = props;
