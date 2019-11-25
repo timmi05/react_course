@@ -1,0 +1,9 @@
+.button{
+  background-color: #f65261;
+  color: #ffffff;
+}
+
+.button:disabled{
+background-color: #555555
+}
+

@@ -1,0 +1,11 @@
+.product-rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4%;
+    border: 1px solid #ffffff;
+    padding: 2%;
+    color: #a1e66f;
+    border-radius: 50%;
+    font-size: 26px;
+}

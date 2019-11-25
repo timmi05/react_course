@@ -1,0 +1,15 @@
+.search-by-switch{
+    display: flex;
+}
+
+.search-by-switch-label{
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search-by-switch-button{
+    font-size: 15px;
+    padding: 10px 26px;
+}

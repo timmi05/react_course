@@ -1,0 +1,25 @@
+.search-panel {
+    margin: 40px;
+}
+
+.search-panel-label{
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.search-panel-main{
+    padding-bottom: 15px;
+    display: flex;
+}
+
+.search-panel-input{
+    width: 85%;
+    margin-right: 20px;
+    height: 40px;
+    font-size: 28px;
+}
+
+.search-panel-button{
+    font-size: 20px;
+    padding: 10px 35px;
+}
