@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResultPanel rendering renders correctly 1`] = `
+<span
+  className="result-sort"
+>
+  <label
+    className="result-sort-label"
+  >
+    SORT BY 
+  </label>
+  <div
+    className="result-sort-buttons"
+  >
+    <Button
+      classes="result-sort-button result-sort-left-button"
+      disabled={false}
+      label="RELEASE DATE"
+      onClick={[Function]}
+    />
+    <Button
+      classes="result-sort-button result-sort-right-button"
+      disabled={true}
+      label="RATING"
+      onClick={[Function]}
+    />
+  </div>
+</span>
+`;
+
+exports[`ResultPanel rendering renders if productSelected is true 1`] = `<a />`;
+
+exports[`ResultPanel rendering renders if productSelected is true 2`] = `
+<span
+  className="result-sort"
+>
+  <label
+    className="result-sort-label"
+  >
+    SORT BY 
+  </label>
+  <div
+    className="result-sort-buttons"
+  >
+    <Button
+      classes="result-sort-button result-sort-left-button"
+      disabled={false}
+      label="RELEASE DATE"
+      onClick={[Function]}
+    />
+    <Button
+      classes="result-sort-button result-sort-right-button"
+      disabled={true}
+      label="RATING"
+      onClick={[Function]}
+    />
+  </div>
+</span>
+`;
+
+exports[`ResultPanel rendering simulate click on button by RATING 1`] = `
+<ResultSort>
+  <span
+    className="result-sort"
+  >
+    <label
+      className="result-sort-label"
+    >
+      SORT BY 
+    </label>
+    <div
+      className="result-sort-buttons"
+    >
+      <Button
+        classes="result-sort-button result-sort-left-button"
+        disabled={false}
+        label="RELEASE DATE"
+        onClick={[Function]}
+      >
+        <button
+          className="button result-sort-button result-sort-left-button"
+          disabled={false}
+          onClick={[Function]}
+          type="submit"
+        >
+          RELEASE DATE
+        </button>
+      </Button>
+      <Button
+        classes="result-sort-button result-sort-right-button"
+        disabled={true}
+        label="RATING"
+        onClick={[Function]}
+      >
+        <button
+          className="button result-sort-button result-sort-right-button"
+          disabled={true}
+          onClick={[Function]}
+          type="submit"
+        >
+          RATING
+        </button>
+      </Button>
+    </div>
+  </span>
+</ResultSort>
+`;
+
+exports[`ResultPanel rendering simulate click on button by RELEASE DATE 1`] = `
+<ResultSort>
+  <span
+    className="result-sort"
+  >
+    <label
+      className="result-sort-label"
+    >
+      SORT BY 
+    </label>
+    <div
+      className="result-sort-buttons"
+    >
+      <Button
+        classes="result-sort-button result-sort-left-button"
+        disabled={true}
+        label="RELEASE DATE"
+        onClick={[Function]}
+      >
+        <button
+          className="button result-sort-button result-sort-left-button"
+          disabled={true}
+          onClick={[Function]}
+          type="submit"
+        >
+          RELEASE DATE
+        </button>
+      </Button>
+      <Button
+        classes="result-sort-button result-sort-right-button"
+        disabled={false}
+        label="RATING"
+        onClick={[Function]}
+      >
+        <button
+          className="button result-sort-button result-sort-right-button"
+          disabled={false}
+          onClick={[Function]}
+          type="submit"
+        >
+          RATING
+        </button>
+      </Button>
+    </div>
+  </span>
+</ResultSort>
+`;

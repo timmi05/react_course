@@ -4,7 +4,7 @@ import { ErrorBoundary } from  './error/ErrorBoundary'
 import './App.css';
 
 export const App = () => {
-    const productSelected = true;
+    const productSelected = false;
     const genre = productSelected ? 'Drama' : null;
 
     const data =

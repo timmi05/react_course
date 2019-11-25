@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResultInfo rendering renders if productSelected is false, data empty 1`] = `
+<span
+  className="result-info"
+/>
+`;
+
+exports[`ResultInfo rendering renders if productSelected is false, data empty, genre not empty 1`] = `
+<span
+  className="result-info"
+>
+  Film by genre genre
+</span>
+`;
+
+exports[`ResultInfo rendering renders if productSelected is false, data not empty 1`] = `
+<span
+  className="result-info"
+>
+  1 movie found
+</span>
+`;
+
+exports[`ResultInfo rendering renders if productSelected is true 1`] = `
+<span
+  className="result-info"
+/>
+`;

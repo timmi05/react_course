@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductDetails rendering renders correctly 1`] = `
+<div
+  className="product-details"
+>
+  <span
+    className="product-details-release"
+  >
+    <DigitalInfo />
+  </span>
+  <DigitalInfo
+    meaning="min"
+  />
+</div>
+`;

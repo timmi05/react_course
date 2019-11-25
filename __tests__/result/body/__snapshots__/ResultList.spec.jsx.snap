@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResultList rendering renders correctly 1`] = `
+<div>
+  <ul
+    className="result-list"
+  >
+    <ResultItem
+      key="1"
+      posterPath="posterPath"
+      releaseDate="releaseDate"
+      tagline="tagline"
+      title="title"
+    />
+  </ul>
+</div>
+`;

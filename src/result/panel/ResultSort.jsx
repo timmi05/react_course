@@ -27,13 +27,13 @@ export const ResultSort = props => {
                 <Button
                 label = 'RELEASE DATE'
                 classes = 'result-sort-button result-sort-left-button'
-                handleSubmit = { SortByReleaseDate }
+                onClick = { SortByReleaseDate }
                 disabled = { disabled }
                 />
                 <Button
                 label = 'RATING'
                 classes = 'result-sort-button result-sort-right-button'
-                handleSubmit = { SortByRating }
+                onClick = { SortByRating }
                 disabled = { !disabled }
                 />
             </div>

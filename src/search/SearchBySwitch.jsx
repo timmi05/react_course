@@ -21,13 +21,13 @@ export const SearchBySwitch = () => {
                 <Button
                 label = 'TITLE'
                 classes = 'search-by-switch-button search-by-switch-left-button'
-                handleSubmit = { SearchByTitle }
+                onClick = { SearchByTitle }
                 disabled = { disabled }
                 />
                 <Button
                 label = 'GENRE'
                 classes = 'search-by-switch-button search-by-switch-right-button'
-                handleSubmit = { SearchByGenre }
+                onClick = { SearchByGenre }
                 disabled = { !disabled }
                 />
             </div>

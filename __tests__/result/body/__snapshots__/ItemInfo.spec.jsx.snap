@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemInfo rendering renders correctly 1`] = `
+<div
+  className="item-info"
+>
+  <div
+    className="item-info-title-year"
+  >
+    <div
+      className="item-info-title"
+    >
+       
+       
+    </div>
+    <span
+      className="item-info-release-year"
+    />
+  </div>
+  <div
+    className="item-info-tagline"
+  />
+</div>
+`;
