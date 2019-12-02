@@ -20,7 +20,10 @@ exports[`HeaderContainer rendering renders correctly 1`] = `
   </div>
   <Product
     description="Best film of year"
-    overview="The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's Guardians of the Galaxy"
+    overview="The third film based on Marvel's Guardians of the Galaxy.
+ The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's Guardians of
+ the Galaxy. The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's
+ Guardians of the Galaxy"
     posterPath="https://image.tmdb.org/t/p/w500/ldoY4fTZkGISMidNw60GHoNdgP8.jpg"
     releaseDate="2019"
     runtime="145"
@@ -51,7 +54,10 @@ exports[`HeaderContainer rendering renders correctly 2`] = `
   </div>
   <SearchPanel
     description="Best film of year"
-    overview="The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's Guardians of the Galaxy"
+    overview="The third film based on Marvel's Guardians of the Galaxy.
+ The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's Guardians of
+ the Galaxy. The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's
+ Guardians of the Galaxy"
     posterPath="https://image.tmdb.org/t/p/w500/ldoY4fTZkGISMidNw60GHoNdgP8.jpg"
     releaseDate="2019"
     runtime="145"

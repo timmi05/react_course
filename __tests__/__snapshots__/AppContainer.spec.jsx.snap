@@ -13,23 +13,3 @@ exports[`AppContainer rendering renders correctly 1`] = `
   </div>
 </div>
 `;
-
-exports[`AppContainer rendering renders correctly 2`] = `
-<div
-  className="app-container"
->
-  <HeaderContainer
-    productSelected={true}
-  />
-  <Result
-    data={Array []}
-    genre="genre"
-    productSelected={true}
-  />
-  <div
-    className="app-container-lower-panel"
-  >
-    <AppLabel />
-  </div>
-</div>
-`;

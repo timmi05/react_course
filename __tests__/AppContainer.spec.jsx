@@ -7,13 +7,4 @@ describe('AppContainer rendering', () => {
         const component = shallow(<AppContainer/>);
         expect(component).toMatchSnapshot();
     });
-
-    it('renders correctly', () => {
-        const component = shallow(<AppContainer
-        productSelected = { true }
-        genre = 'genre'
-        data = { [] }
-        />);
-        expect(component).toMatchSnapshot();
-    });
 });

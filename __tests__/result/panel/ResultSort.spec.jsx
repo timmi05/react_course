@@ -25,8 +25,6 @@ describe('ResultPanel rendering', () => {
     it('simulate click on button by RELEASE DATE', () => {
         const component = mount(<ResultSort/>);
         component.find({label: 'RELEASE DATE'}).simulate('click');
-        expect(component.find({className:'button result-sort-button result-sort-left-button'})
-            .prop('disabled')).toBe(true);
         expect(component).toMatchSnapshot();
     });
 
@@ -34,8 +32,6 @@ describe('ResultPanel rendering', () => {
         const component = mount(<ResultSort/>);
         component.find({label: 'RELEASE DATE'}).simulate('click');
         component.find({label: 'RATING'}).simulate('click');
-        expect(component.find({className:'button result-sort-button result-sort-right-button'})
-            .prop('disabled')).toBe(true);
         expect(component).toMatchSnapshot();
     });
 });
