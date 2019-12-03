@@ -24,7 +24,7 @@ export const SearchPanel = () => {
                <Button
                label = 'SEARCH'
                classes = 'search-panel-button'
-               handleSubmit = { handleSubmit }
+               onClick = { handleSubmit }
                disabled = { disabled }
                />
            </div>

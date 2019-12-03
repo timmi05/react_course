@@ -1,3 +1,8 @@
 {
-  "testRegex": "((\\.|/*.)(spec))\\.js?$"
+  "testRegex": "((\\.|/*.)(spec))\\.jsx?$",
+  "moduleNameMapper": { "\\.(css|less)$": "<rootDir>/__tests__/css/__mocks__/StyleMock.js" },
+  "snapshotSerializers": ["<rootDir>/node_modules/enzyme-to-json/serializer"],
+  "collectCoverage": true,
+  "coverageReporters": ["json", "html"],
+  "modulePathIgnorePatterns": ["<rootDir>/cypress/"]
 }

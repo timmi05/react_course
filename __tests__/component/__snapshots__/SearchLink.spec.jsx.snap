@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DigitalInfo rendering should render empty <a> 1`] = `<a />`;
+
+exports[`DigitalInfo rendering should render href search 1`] = `
+<a
+  className="search-link"
+  href=""
+>
+  search
+</a>
+`;

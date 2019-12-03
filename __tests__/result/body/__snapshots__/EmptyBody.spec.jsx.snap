@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmptyBody rendering renders correctly 1`] = `
+<div
+  className="empty-body"
+>
+  No films found
+</div>
+`;

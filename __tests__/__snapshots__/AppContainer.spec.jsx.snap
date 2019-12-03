@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppContainer rendering renders correctly 1`] = `
+<div
+  className="app-container"
+>
+  <HeaderContainer />
+  <Result />
+  <div
+    className="app-container-lower-panel"
+  >
+    <AppLabel />
+  </div>
+</div>
+`;

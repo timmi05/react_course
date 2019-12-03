@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DigitalInfo rendering renders correctly 1`] = `
+<span
+  className="digital-info"
+>
+  <span
+    className="digital-info-value"
+  />
+  <span
+    className="digital-info-meaning"
+  />
+</span>
+`;

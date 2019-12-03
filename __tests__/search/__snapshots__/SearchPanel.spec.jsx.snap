@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchPanel rendering renders correctly 1`] = `
+<SearchPanel>
+  <div
+    className="search-panel"
+  >
+    <div
+      className="search-panel-label"
+    >
+      FINED YOUR MOVIE
+    </div>
+    <div
+      className="search-panel-main"
+    >
+      <input
+        className="search-panel-input"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+      <Button
+        classes="search-panel-button"
+        disabled={false}
+        label="SEARCH"
+        onClick={[Function]}
+      >
+        <button
+          className="button search-panel-button"
+          disabled={false}
+          onClick={[Function]}
+          type="submit"
+        >
+          SEARCH
+        </button>
+      </Button>
+    </div>
+    <SearchBySwitch>
+      <div
+        className="search-by-switch"
+      >
+        <span
+          className="search-by-switch-label"
+        >
+          SEARCH BY 
+        </span>
+        <div
+          className="search-by-switch-buttons"
+        >
+          <Button
+            classes="search-by-switch-button search-by-switch-left-button"
+            disabled={false}
+            label="TITLE"
+            onClick={[Function]}
+          >
+            <button
+              className="button search-by-switch-button search-by-switch-left-button"
+              disabled={false}
+              onClick={[Function]}
+              type="submit"
+            >
+              TITLE
+            </button>
+          </Button>
+          <Button
+            classes="search-by-switch-button search-by-switch-right-button"
+            disabled={true}
+            label="GENRE"
+            onClick={[Function]}
+          >
+            <button
+              className="button search-by-switch-button search-by-switch-right-button"
+              disabled={true}
+              onClick={[Function]}
+              type="submit"
+            >
+              GENRE
+            </button>
+          </Button>
+        </div>
+      </div>
+    </SearchBySwitch>
+  </div>
+</SearchPanel>
+`;
+
+exports[`SearchPanel rendering simulate change of input 1`] = `
+<SearchPanel>
+  <div
+    className="search-panel"
+  >
+    <div
+      className="search-panel-label"
+    >
+      FINED YOUR MOVIE
+    </div>
+    <div
+      className="search-panel-main"
+    >
+      <input
+        className="search-panel-input"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+      <Button
+        classes="search-panel-button"
+        disabled={false}
+        label="SEARCH"
+        onClick={[Function]}
+      >
+        <button
+          className="button search-panel-button"
+          disabled={false}
+          onClick={[Function]}
+          type="submit"
+        >
+          SEARCH
+        </button>
+      </Button>
+    </div>
+    <SearchBySwitch>
+      <div
+        className="search-by-switch"
+      >
+        <span
+          className="search-by-switch-label"
+        >
+          SEARCH BY 
+        </span>
+        <div
+          className="search-by-switch-buttons"
+        >
+          <Button
+            classes="search-by-switch-button search-by-switch-left-button"
+            disabled={false}
+            label="TITLE"
+            onClick={[Function]}
+          >
+            <button
+              className="button search-by-switch-button search-by-switch-left-button"
+              disabled={false}
+              onClick={[Function]}
+              type="submit"
+            >
+              TITLE
+            </button>
+          </Button>
+          <Button
+            classes="search-by-switch-button search-by-switch-right-button"
+            disabled={true}
+            label="GENRE"
+            onClick={[Function]}
+          >
+            <button
+              className="button search-by-switch-button search-by-switch-right-button"
+              disabled={true}
+              onClick={[Function]}
+              type="submit"
+            >
+              GENRE
+            </button>
+          </Button>
+        </div>
+      </div>
+    </SearchBySwitch>
+  </div>
+</SearchPanel>
+`;
+
+exports[`SearchPanel rendering simulate click on button SEARCH 1`] = `
+<SearchPanel>
+  <div
+    className="search-panel"
+  >
+    <div
+      className="search-panel-label"
+    >
+      FINED YOUR MOVIE
+    </div>
+    <div
+      className="search-panel-main"
+    >
+      <input
+        className="search-panel-input"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+      <Button
+        classes="search-panel-button"
+        disabled={true}
+        label="SEARCH"
+        onClick={[Function]}
+      >
+        <button
+          className="button search-panel-button"
+          disabled={true}
+          onClick={[Function]}
+          type="submit"
+        >
+          SEARCH
+        </button>
+      </Button>
+    </div>
+    <SearchBySwitch>
+      <div
+        className="search-by-switch"
+      >
+        <span
+          className="search-by-switch-label"
+        >
+          SEARCH BY 
+        </span>
+        <div
+          className="search-by-switch-buttons"
+        >
+          <Button
+            classes="search-by-switch-button search-by-switch-left-button"
+            disabled={false}
+            label="TITLE"
+            onClick={[Function]}
+          >
+            <button
+              className="button search-by-switch-button search-by-switch-left-button"
+              disabled={false}
+              onClick={[Function]}
+              type="submit"
+            >
+              TITLE
+            </button>
+          </Button>
+          <Button
+            classes="search-by-switch-button search-by-switch-right-button"
+            disabled={true}
+            label="GENRE"
+            onClick={[Function]}
+          >
+            <button
+              className="button search-by-switch-button search-by-switch-right-button"
+              disabled={true}
+              onClick={[Function]}
+              type="submit"
+            >
+              GENRE
+            </button>
+          </Button>
+        </div>
+      </div>
+    </SearchBySwitch>
+  </div>
+</SearchPanel>
+`;

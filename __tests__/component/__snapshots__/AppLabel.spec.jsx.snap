@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppLabel rendering renders correctly 1`] = `
+<div
+  className="app-label"
+>
+  <span
+    className="app-label-start"
+  >
+    netflix
+  </span>
+  <span
+    className="app-label-end"
+  >
+    roulette
+  </span>
+</div>
+`;

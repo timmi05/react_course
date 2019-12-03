@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResultBody rendering renders correctly data with item 1`] = `
+<ResultList
+  classesName="result-body"
+  data={
+    Array [
+      Object {
+        "id": 1,
+        "posterPath": "posterPath",
+        "releaseDate": "releaseDate",
+        "tagline": "tagline",
+        "title": "title",
+      },
+    ]
+  }
+/>
+`;
+
+exports[`ResultBody rendering renders correctly empty data 1`] = `
+<EmptyBody
+  classesName="result-body"
+/>
+`;

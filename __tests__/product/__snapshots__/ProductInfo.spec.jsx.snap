@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductInfo rendering renders correctly 1`] = `
+<div
+  className="product-info"
+>
+  <div
+    className="product-info-title-rating"
+  >
+    <span
+      className="product-info-title"
+    />
+    <ProductRating />
+  </div>
+  <div
+    className="product-info-tagline"
+  />
+  <ProductDetails />
+  <ProductDescription />
+</div>
+`;
