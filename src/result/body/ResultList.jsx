@@ -1,22 +1,23 @@
 import React from 'react';
-import { ResultItem } from './ResultItem';
+import {ResultItem} from './ResultItem';
 import './ResultList.css'
 
 export const ResultList = props => {
-    const { data, classesName } = props;
+    const {movies, openMovie, classesName} = props;
     return (
-        <div className={ classesName }>
+        <div className={classesName}>
             <ul className='result-list'>
-             { data.map((movie) =>
-                 < ResultItem key={ movie.id }
-                  posterPath={ movie.posterPath }
-                  title={ movie.title }
-                  tagline={ movie.tagline }
-                  releaseDate={ movie.releaseDate }
-                 />
-                 )
-             }
+                {movies.map(movie =>
+                    < ResultItem key={movie.id}
+                                 id={movie.id}
+                                 posterPath={movie.poster_path}
+                                 title={movie.title}
+                                 tagline={movie.tagline}
+                                 releaseDate={movie.release_date.substring(0, 4)}
+                                 openMovie={openMovie}
+                    />
+                )}
             </ul>
-         </div>
+        </div>
     )
 };

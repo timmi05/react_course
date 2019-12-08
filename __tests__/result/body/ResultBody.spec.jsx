@@ -1,26 +1,26 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import { ResultBody } from '../../../src/result/body/ResultBody';
+import {shallow} from 'enzyme';
+import {ResultBody} from '../../../src/result/body/ResultBody';
 
 describe('ResultBody rendering', () => {
     it('renders correctly empty data', () => {
         const component = shallow(<ResultBody
-        data = { [] }
+            movies={[]}
         />);
         expect(component).toMatchSnapshot();
     });
 
     it('renders correctly data with item', () => {
-        const data =
+        const movies =
             [{
                 id: 1,
-                posterPath: 'posterPath',
+                poster_path: 'posterPath',
                 title: 'title',
                 tagline: 'tagline',
-                releaseDate : 'releaseDate'
+                release_date: 'releaseDate'
             }];
         const component = shallow(<ResultBody
-            data = { data }
+            movies={movies}
         />);
         expect(component).toMatchSnapshot();
     });

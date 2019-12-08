@@ -1,0 +1,1 @@
+export const selectIsProductSelected = state => state.isProductSelected;

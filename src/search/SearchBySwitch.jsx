@@ -1,34 +1,36 @@
-import React, { useState } from 'react';
-import { Button } from '../component/Button'
+import React, {useState} from 'react';
+import {Button} from '../component/Button'
 import './SearchBySwitch.css';
 
-export const SearchBySwitch = () => {
+export const SearchBySwitch = props => {
 
-    const [disabled, setDisabled] = useState(false);
+    const [disabled, setDisabled] = useState(props.searchByTitleDisabled);
 
-    const SearchByTitle = () => {
+    const searchByTitle = () => {
         setDisabled(true);
+        props.searchByTitle()
     };
 
-    const SearchByGenre = () => {
+    const searchByGenre = () => {
         setDisabled(false);
+        props.searchByGenre()
     };
 
     return (
         <div className='search-by-switch'>
             <span className='search-by-switch-label'>SEARCH BY </span>
-            <div className = 'search-by-switch-buttons'>
+            <div className='search-by-switch-buttons'>
                 <Button
-                label = 'TITLE'
-                classes = 'search-by-switch-button search-by-switch-left-button'
-                onClick = { SearchByTitle }
-                disabled = { disabled }
+                    label='TITLE'
+                    classes='search-by-switch-button search-by-switch-left-button'
+                    onClick={searchByTitle}
+                    disabled={disabled}
                 />
                 <Button
-                label = 'GENRE'
-                classes = 'search-by-switch-button search-by-switch-right-button'
-                onClick = { SearchByGenre }
-                disabled = { !disabled }
+                    label='GENRE'
+                    classes='search-by-switch-button search-by-switch-right-button'
+                    onClick={searchByGenre}
+                    disabled={!disabled}
                 />
             </div>
         </div>

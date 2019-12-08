@@ -6,8 +6,8 @@ export const EmptyBody = props => {
     const composedClassName = classnames(
         props.classesName,
         'empty-body'
-      );
-    return(
-    <div className={ composedClassName }>No films found</div>
+    );
+    return (
+        <div className={composedClassName}>No films found</div>
     )
 };

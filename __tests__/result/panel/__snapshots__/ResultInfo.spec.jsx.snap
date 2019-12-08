@@ -3,7 +3,9 @@
 exports[`ResultInfo rendering renders if productSelected is false, data empty 1`] = `
 <span
   className="result-info"
-/>
+>
+  undefined movie found
+</span>
 `;
 
 exports[`ResultInfo rendering renders if productSelected is false, data empty, genre not empty 1`] = `

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product rendering renders correctly 1`] = `
+<DigitalInfo
+  meaning=" min"
+  value={1}
+/>
+`;
+
+exports[`Product rendering renders empty 1`] = `<a />`;

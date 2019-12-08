@@ -1,155 +1,168 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ResultPanel rendering renders correctly 1`] = `
-<span
-  className="result-sort"
+exports[`ResultSort rendering renders if productSelected is true 1`] = `
+<ContextProvider
+  value={null}
 >
-  <label
-    className="result-sort-label"
-  >
-    SORT BY 
-  </label>
-  <div
-    className="result-sort-buttons"
-  >
-    <Button
-      classes="result-sort-button result-sort-left-button"
-      disabled={false}
-      label="RELEASE DATE"
-      onClick={[Function]}
-    />
-    <Button
-      classes="result-sort-button result-sort-right-button"
-      disabled={true}
-      label="RATING"
-      onClick={[Function]}
-    />
-  </div>
-</span>
+  <ResultSort
+    isProductSelected={true}
+    onSortBy={[Function]}
+    sortBy="vote_average"
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  />
+</ContextProvider>
 `;
 
-exports[`ResultPanel rendering renders if productSelected is true 1`] = `<a />`;
-
-exports[`ResultPanel rendering renders if productSelected is true 2`] = `
-<span
-  className="result-sort"
+exports[`ResultSort rendering simulate click on button by RATING 1`] = `
+<Connect(ResultSort)
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
 >
-  <label
-    className="result-sort-label"
+  <ResultSort
+    isProductSelected={false}
+    onSortBy={[Function]}
+    sortBy="vote_average"
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
   >
-    SORT BY 
-  </label>
-  <div
-    className="result-sort-buttons"
-  >
-    <Button
-      classes="result-sort-button result-sort-left-button"
-      disabled={false}
-      label="RELEASE DATE"
-      onClick={[Function]}
-    />
-    <Button
-      classes="result-sort-button result-sort-right-button"
-      disabled={true}
-      label="RATING"
-      onClick={[Function]}
-    />
-  </div>
-</span>
+    <span
+      className="result-sort"
+    >
+      <label
+        className="result-sort-label"
+      >
+        SORT BY 
+      </label>
+      <div
+        className="result-sort-buttons"
+      >
+        <Button
+          classes="result-sort-button result-sort-left-button"
+          disabled={false}
+          label="RELEASE DATE"
+          onClick={[Function]}
+        >
+          <button
+            className="button result-sort-button result-sort-left-button"
+            disabled={false}
+            onClick={[Function]}
+            type="submit"
+          >
+            RELEASE DATE
+          </button>
+        </Button>
+        <Button
+          classes="result-sort-button result-sort-right-button"
+          disabled={true}
+          label="RATING"
+          onClick={[Function]}
+        >
+          <button
+            className="button result-sort-button result-sort-right-button"
+            disabled={true}
+            onClick={[Function]}
+            type="submit"
+          >
+            RATING
+          </button>
+        </Button>
+      </div>
+    </span>
+  </ResultSort>
+</Connect(ResultSort)>
 `;
 
-exports[`ResultPanel rendering simulate click on button by RATING 1`] = `
-<ResultSort>
-  <span
-    className="result-sort"
+exports[`ResultSort rendering simulate click on button by RELEASE DATE 1`] = `
+<Connect(ResultSort)
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <ResultSort
+    isProductSelected={false}
+    onSortBy={[Function]}
+    sortBy="release_date"
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
   >
-    <label
-      className="result-sort-label"
+    <span
+      className="result-sort"
     >
-      SORT BY 
-    </label>
-    <div
-      className="result-sort-buttons"
-    >
-      <Button
-        classes="result-sort-button result-sort-left-button"
-        disabled={false}
-        label="RELEASE DATE"
-        onClick={[Function]}
+      <label
+        className="result-sort-label"
       >
-        <button
-          className="button result-sort-button result-sort-left-button"
-          disabled={false}
-          onClick={[Function]}
-          type="submit"
-        >
-          RELEASE DATE
-        </button>
-      </Button>
-      <Button
-        classes="result-sort-button result-sort-right-button"
-        disabled={true}
-        label="RATING"
-        onClick={[Function]}
+        SORT BY 
+      </label>
+      <div
+        className="result-sort-buttons"
       >
-        <button
-          className="button result-sort-button result-sort-right-button"
+        <Button
+          classes="result-sort-button result-sort-left-button"
           disabled={true}
+          label="RELEASE DATE"
           onClick={[Function]}
-          type="submit"
         >
-          RATING
-        </button>
-      </Button>
-    </div>
-  </span>
-</ResultSort>
-`;
-
-exports[`ResultPanel rendering simulate click on button by RELEASE DATE 1`] = `
-<ResultSort>
-  <span
-    className="result-sort"
-  >
-    <label
-      className="result-sort-label"
-    >
-      SORT BY 
-    </label>
-    <div
-      className="result-sort-buttons"
-    >
-      <Button
-        classes="result-sort-button result-sort-left-button"
-        disabled={true}
-        label="RELEASE DATE"
-        onClick={[Function]}
-      >
-        <button
-          className="button result-sort-button result-sort-left-button"
-          disabled={true}
-          onClick={[Function]}
-          type="submit"
-        >
-          RELEASE DATE
-        </button>
-      </Button>
-      <Button
-        classes="result-sort-button result-sort-right-button"
-        disabled={false}
-        label="RATING"
-        onClick={[Function]}
-      >
-        <button
-          className="button result-sort-button result-sort-right-button"
+          <button
+            className="button result-sort-button result-sort-left-button"
+            disabled={true}
+            onClick={[Function]}
+            type="submit"
+          >
+            RELEASE DATE
+          </button>
+        </Button>
+        <Button
+          classes="result-sort-button result-sort-right-button"
           disabled={false}
+          label="RATING"
           onClick={[Function]}
-          type="submit"
         >
-          RATING
-        </button>
-      </Button>
-    </div>
-  </span>
-</ResultSort>
+          <button
+            className="button result-sort-button result-sort-right-button"
+            disabled={false}
+            onClick={[Function]}
+            type="submit"
+          >
+            RATING
+          </button>
+        </Button>
+      </div>
+    </span>
+  </ResultSort>
+</Connect(ResultSort)>
 `;

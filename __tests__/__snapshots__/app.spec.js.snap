@@ -5,56 +5,36 @@ exports[`App rendering renders correctly 1`] = `
   className="app"
 >
   <ErrorBoundary>
-    <AppContainer
-      data={
-        Array [
-          Object {
-            "id": 1,
-            "posterPath": "https://image.tmdb.org/t/p/w500/uJ6OnE3CzGWq6buLINAbdBqa0gV.jpg",
-            "releaseDate": "2018",
-            "tagline": "A Star Wars",
-            "title": "Solo: A Star Wars Story",
-          },
-          Object {
-            "id": 2,
-            "posterPath": "https://image.tmdb.org/t/p/w500/uJ6OnE3CzGWq6buLINAbdBqa0gV.jpg",
-            "releaseDate": "2018",
-            "tagline": "A Star Wars",
-            "title": "Solo: A Star Wars Story",
-          },
-          Object {
-            "id": 3,
-            "posterPath": "https://image.tmdb.org/t/p/w500/uJ6OnE3CzGWq6buLINAbdBqa0gV.jpg",
-            "releaseDate": "2018",
-            "tagline": "A Star Wars",
-            "title": "Solo: A Star Wars Story",
-          },
-          Object {
-            "id": 4,
-            "posterPath": "https://image.tmdb.org/t/p/w500/uJ6OnE3CzGWq6buLINAbdBqa0gV.jpg",
-            "releaseDate": "2018",
-            "tagline": "A Star Wars",
-            "title": "Solo: A Star Wars Story",
-          },
-          Object {
-            "id": 5,
-            "posterPath": "https://image.tmdb.org/t/p/w500/uJ6OnE3CzGWq6buLINAbdBqa0gV.jpg",
-            "releaseDate": "2018",
-            "tagline": "A Star Wars",
-            "title": "Solo: A Star Wars Story",
-          },
-          Object {
-            "id": 6,
-            "posterPath": "https://image.tmdb.org/t/p/w500/uJ6OnE3CzGWq6buLINAbdBqa0gV.jpg",
-            "releaseDate": "2018",
-            "tagline": "A Star Wars",
-            "title": "Solo: A Star Wars Story",
-          },
-        ]
+    <Provider
+      store={
+        Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        }
       }
-      genre={null}
-      productSelected={false}
-    />
+    >
+      <PersistGate
+        loading={null}
+        persistor={
+          Object {
+            "dispatch": [Function],
+            "flush": [Function],
+            "getState": [Function],
+            "pause": [Function],
+            "persist": [Function],
+            "purge": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+            Symbol(observable): [Function],
+          }
+        }
+      >
+        <AppContainer />
+      </PersistGate>
+    </Provider>
   </ErrorBoundary>
 </div>
 `;

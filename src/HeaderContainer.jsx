@@ -1,39 +1,49 @@
 import React from 'react';
-import { SearchPanel } from './search/SearchPanel';
-import {Product } from './product/Product';
-import { AppLabel } from './component/AppLabel';
-import { SearchLink } from './component/SearchLink';
+import SearchPanel from './search/SearchPanel';
+import {Product} from './product/Product';
+import {AppLabel} from './component/AppLabel';
+import {SearchLink} from './component/SearchLink';
 import './HeaderContainer.css';
+import {connect} from 'react-redux';
+import {selectIsProductSelected} from './store/selectors/selectIsProductSelected'
+import {selectSelectedProduct} from './store/selectors/selectSelectedProduct'
+import {moveToSearch} from './store/actions/search'
 
-export const HeaderContainer = props => {
-    const { productSelected } = props;
-    const Content = productSelected ? Product : SearchPanel;
-
+const HeaderContainer = props => {
+    const {isProductSelected, selectedProduct, onMoveToSearch} = props;
+    const Content = isProductSelected ? Product : SearchPanel;
     return (
         <div className='header-container'>
             <div className='header-container-label'>
                 <span>
-                < AppLabel />
+                < AppLabel/>
                 </span>
                 <span className='header-container-search'>
                     < SearchLink
-                    productSelected = { productSelected }
+                        isProductSelected={isProductSelected}
+                        moveToSearch={onMoveToSearch}
                     />
                 </span>
             </div>
             < Content
-                runtime = '145'
-                releaseDate = '2019'
-                description = 'Best film of year'
-                title = 'Guardians of the galaxy: VOL. 3'
-                tagline = 'Tagline'
-                voteAverage = '4'
-                posterPath = 'https://image.tmdb.org/t/p/w500/ldoY4fTZkGISMidNw60GHoNdgP8.jpg'
-                overview = "The third film based on Marvel's Guardians of the Galaxy.
-                 The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's Guardians of
-                  the Galaxy. The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's
-                   Guardians of the Galaxy"
-             />
-         </div>
+                movie={selectedProduct}
+            />
+        </div>
     );
 };
+
+
+const mapStateToProps = state => ({
+    isProductSelected: selectIsProductSelected(state),
+    selectedProduct: selectSelectedProduct(state)
+});
+
+const mapDispatchToProps = dispatch => ({
+    onMoveToSearch: () => dispatch(moveToSearch())
+});
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(HeaderContainer);
+

@@ -9,13 +9,19 @@ exports[`ProductInfo rendering renders correctly 1`] = `
   >
     <span
       className="product-info-title"
-    />
+    >
+      title
+    </span>
     <ProductRating />
   </div>
   <div
     className="product-info-tagline"
+  >
+    tagline
+  </div>
+  <ProductDetails
+    releaseDate="rele"
   />
-  <ProductDetails />
   <ProductDescription />
 </div>
 `;

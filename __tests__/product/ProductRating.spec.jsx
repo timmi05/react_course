@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import { ProductRating } from '../../src/product/ProductRating';
+import {ProductRating} from '../../src/product/ProductRating';
 
 describe('ProductRating rendering', () => {
     it('renders correctly', () => {

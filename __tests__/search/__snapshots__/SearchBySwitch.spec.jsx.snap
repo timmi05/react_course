@@ -15,13 +15,11 @@ exports[`SearchBySwitch rendering renders correctly 1`] = `
     >
       <Button
         classes="search-by-switch-button search-by-switch-left-button"
-        disabled={false}
         label="TITLE"
         onClick={[Function]}
       >
         <button
           className="button search-by-switch-button search-by-switch-left-button"
-          disabled={false}
           onClick={[Function]}
           type="submit"
         >
@@ -49,7 +47,10 @@ exports[`SearchBySwitch rendering renders correctly 1`] = `
 `;
 
 exports[`SearchBySwitch rendering simulate click on button by GENRE 1`] = `
-<SearchBySwitch>
+<SearchBySwitch
+  searchByGenre={[Function]}
+  searchByTitle={[Function]}
+>
   <div
     className="search-by-switch"
   >
@@ -97,7 +98,9 @@ exports[`SearchBySwitch rendering simulate click on button by GENRE 1`] = `
 `;
 
 exports[`SearchBySwitch rendering simulate click on button by TITLE 1`] = `
-<SearchBySwitch>
+<SearchBySwitch
+  searchByTitle={[Function]}
+>
   <div
     className="search-by-switch"
   >
