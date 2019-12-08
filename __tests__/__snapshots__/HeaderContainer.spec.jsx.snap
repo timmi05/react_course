@@ -20,24 +20,3 @@ exports[`HeaderContainer rendering renders if product is not selected 1`] = `
   />
 </ContextProvider>
 `;
-
-exports[`HeaderContainer rendering renders if product is selected 1`] = `
-<ContextProvider
-  value={null}
->
-  <HeaderContainer
-    isProductSelected={false}
-    onMoveToSearch={[Function]}
-    selectedProduct={Object {}}
-    store={
-      Object {
-        "dispatch": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
-        Symbol(observable): [Function],
-      }
-    }
-  />
-</ContextProvider>
-`;
