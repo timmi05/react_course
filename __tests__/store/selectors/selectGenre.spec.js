@@ -1,6 +1,6 @@
-import {getGenre} from '../../src/services/getGenre';
+import {selectGenre} from '../../../src/store/selectors/selectGenre';
 
-describe('Test getGenre', () => {
+describe('Test selectGenre', () => {
 
     const selectedProduct = {
         id: 962,
@@ -18,7 +18,7 @@ describe('Test getGenre', () => {
     };
 
     it('get genre', () => {
-        const result = getGenre(selectedProduct);
+        const result = selectGenre(selectedProduct);
         expect(result).toEqual('Adventure');
     });
 });

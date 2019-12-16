@@ -4,15 +4,10 @@ import {ResultBody} from './body/ResultBody';
 import {fetchMovies, openMovie} from '../store/actions/movies';
 import {connect} from 'react-redux';
 import {selectMovies} from '../store/selectors/selectMovies';
-import {selectValue} from '../store/selectors/selectValue';
 import {selectIsProductSelected} from '../store/selectors/selectIsProductSelected'
 import {selectSelectedProduct} from '../store/selectors/selectSelectedProduct'
-import {selectSortBy} from '../store/selectors/selectSortBy'
-import {selectSearchBy} from '../store/selectors/selectSearchBy'
-import {filterMovies} from '../services/filterMovies'
-import {sortMovies} from '../services/sortMovies'
-import {getGenre} from '../services/getGenre'
 import {findMovie} from '../services/filterMovies'
+import {selectGenre} from '../store/selectors/selectGenre'
 
 class Result extends Component {
     componentDidMount() {
@@ -43,13 +38,10 @@ class Result extends Component {
 
 
 const mapStateToProps = state => {
-    const value = selectValue(state);
-    const sortBy = selectSortBy(state);
-    const searchBy = selectSearchBy(state);
     return ({
-        movies: sortMovies(filterMovies(selectMovies(state), searchBy, value), sortBy),
+        movies: selectMovies(state),
         isProductSelected: selectIsProductSelected(state),
-        genre: getGenre(selectSelectedProduct(state))
+        genre: selectGenre(selectSelectedProduct(state))
     });
 };
 
