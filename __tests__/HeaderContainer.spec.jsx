@@ -1,18 +1,15 @@
 import React from 'react';
-import { shallow } from 'enzyme'
-import { HeaderContainer } from "../src/HeaderContainer";
+import {shallow} from 'enzyme'
+import HeaderContainer from "../src/HeaderContainer";
+import {createStore} from 'redux';
+import {reducer} from '../src/store/reducers/raducer.js';
 
 describe('HeaderContainer rendering', () => {
-    it('renders correctly', ()=> {
-        const component = shallow(<HeaderContainer
-        productSelected = { true }
-        />);
-        expect(component).toMatchSnapshot();
-    });
+    const store = createStore(reducer);
 
-    it('renders correctly', ()=> {
+    it('renders if product is not selected', () => {
         const component = shallow(<HeaderContainer
-        productSelected = { false }
+            store={store}
         />);
         expect(component).toMatchSnapshot();
     });

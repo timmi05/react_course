@@ -4,8 +4,8 @@ exports[`AppContainer rendering renders correctly 1`] = `
 <div
   className="app-container"
 >
-  <HeaderContainer />
-  <Result />
+  <Connect(HeaderContainer) />
+  <Connect(Result) />
   <div
     className="app-container-lower-panel"
   >

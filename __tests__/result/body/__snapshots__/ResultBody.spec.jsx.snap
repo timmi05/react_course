@@ -3,12 +3,12 @@
 exports[`ResultBody rendering renders correctly data with item 1`] = `
 <ResultList
   classesName="result-body"
-  data={
+  movies={
     Array [
       Object {
         "id": 1,
-        "posterPath": "posterPath",
-        "releaseDate": "releaseDate",
+        "poster_path": "posterPath",
+        "release_date": "releaseDate",
         "tagline": "tagline",
         "title": "title",
       },

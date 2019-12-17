@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import { AppLabel } from '../../src/component/AppLabel';
+import {shallow} from 'enzyme';
+import {AppLabel} from '../../src/component/AppLabel';
 
 describe('AppLabel rendering', () => {
     it('renders correctly', () => {

@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 export class ErrorBoundary extends Component {
 
-    state = { hasError: false };
+    state = {hasError: false};
 
     static getDerivedStateFromError(error) {
-        return { hasError: true };
+        return {hasError: true};
     }
 
     render() {

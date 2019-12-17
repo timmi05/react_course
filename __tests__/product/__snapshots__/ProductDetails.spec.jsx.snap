@@ -9,8 +9,6 @@ exports[`ProductDetails rendering renders correctly 1`] = `
   >
     <DigitalInfo />
   </span>
-  <DigitalInfo
-    meaning="min"
-  />
+  <Duration />
 </div>
 `;

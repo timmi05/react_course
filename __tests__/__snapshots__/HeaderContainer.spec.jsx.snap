@@ -1,69 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HeaderContainer rendering renders correctly 1`] = `
-<div
-  className="header-container"
+exports[`HeaderContainer rendering renders if product is not selected 1`] = `
+<ContextProvider
+  value={null}
 >
-  <div
-    className="header-container-label"
-  >
-    <span>
-      <AppLabel />
-    </span>
-    <span
-      className="header-container-search"
-    >
-      <SearchLink
-        productSelected={true}
-      />
-    </span>
-  </div>
-  <Product
-    description="Best film of year"
-    overview="The third film based on Marvel's Guardians of the Galaxy.
- The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's Guardians of
- the Galaxy. The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's
- Guardians of the Galaxy"
-    posterPath="https://image.tmdb.org/t/p/w500/ldoY4fTZkGISMidNw60GHoNdgP8.jpg"
-    releaseDate="2019"
-    runtime="145"
-    tagline="Tagline"
-    title="Guardians of the galaxy: VOL. 3"
-    voteAverage="4"
+  <HeaderContainer
+    isProductSelected={false}
+    onMoveToSearch={[Function]}
+    selectedProduct={Object {}}
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
   />
-</div>
-`;
-
-exports[`HeaderContainer rendering renders correctly 2`] = `
-<div
-  className="header-container"
->
-  <div
-    className="header-container-label"
-  >
-    <span>
-      <AppLabel />
-    </span>
-    <span
-      className="header-container-search"
-    >
-      <SearchLink
-        productSelected={false}
-      />
-    </span>
-  </div>
-  <SearchPanel
-    description="Best film of year"
-    overview="The third film based on Marvel's Guardians of the Galaxy.
- The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's Guardians of
- the Galaxy. The third film based on Marvel's Guardians of the Galaxy. The third film based on Marvel's
- Guardians of the Galaxy"
-    posterPath="https://image.tmdb.org/t/p/w500/ldoY4fTZkGISMidNw60GHoNdgP8.jpg"
-    releaseDate="2019"
-    runtime="145"
-    tagline="Tagline"
-    title="Guardians of the galaxy: VOL. 3"
-    voteAverage="4"
-  />
-</div>
+</ContextProvider>
 `;

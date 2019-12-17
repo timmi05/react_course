@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import { ProductDetails } from '../../src/product/ProductDetails';
+import {shallow} from 'enzyme';
+import {ProductDetails} from '../../src/product/ProductDetails';
 
 describe('ProductDetails rendering', () => {
     it('renders correctly', () => {

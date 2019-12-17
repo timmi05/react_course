@@ -1,61 +1,34 @@
 import React from 'react';
-import { AppContainer } from './AppContainer';
-import { ErrorBoundary } from  './error/ErrorBoundary'
+import {Provider} from 'react-redux';
+import {applyMiddleware, createStore} from 'redux';
+import {composeWithDevTools} from 'redux-devtools-extension';
+import thunk from 'redux-thunk';
+import {reducer} from './store/reducers/raducer.js';
+import {AppContainer} from './AppContainer';
+import {ErrorBoundary} from './error/ErrorBoundary';
 import './App.css';
+import {persistReducer, persistStore} from 'redux-persist'
+import storage from 'redux-persist/lib/storage'
+import {PersistGate} from 'redux-persist/integration/react'
 
-export const App = () => {
-    const productSelected = false;
-    const genre = productSelected ? 'Drama' : null;
-
-    const data =
-        // [];
-        [{
-        id: 1,
-        posterPath: 'https://image.tmdb.org/t/p/w500/uJ6OnE3CzGWq6buLINAbdBqa0gV.jpg',
-        title: 'Solo: A Star Wars Story',
-        tagline: 'A Star Wars',
-        releaseDate : '2018'
-    }, {
-        id:2,
-        posterPath: 'https://image.tmdb.org/t/p/w500/uJ6OnE3CzGWq6buLINAbdBqa0gV.jpg',
-        title: 'Solo: A Star Wars Story',
-        tagline: 'A Star Wars',
-        releaseDate: '2018'
-    }, {
-        id: 3,
-        posterPath: 'https://image.tmdb.org/t/p/w500/uJ6OnE3CzGWq6buLINAbdBqa0gV.jpg',
-        title: 'Solo: A Star Wars Story',
-        tagline: 'A Star Wars',
-        releaseDate: '2018'
-    }, {
-        id: 4,
-        posterPath: 'https://image.tmdb.org/t/p/w500/uJ6OnE3CzGWq6buLINAbdBqa0gV.jpg',
-        title: 'Solo: A Star Wars Story',
-        tagline: 'A Star Wars',
-        releaseDate: '2018'
-    }, {
-        id: 5,
-        posterPath: 'https://image.tmdb.org/t/p/w500/uJ6OnE3CzGWq6buLINAbdBqa0gV.jpg',
-        title: 'Solo: A Star Wars Story',
-        tagline: 'A Star Wars',
-        releaseDate: '2018'
-    }, {
-        id: 6,
-        posterPath: 'https://image.tmdb.org/t/p/w500/uJ6OnE3CzGWq6buLINAbdBqa0gV.jpg',
-        title: 'Solo: A Star Wars Story',
-        tagline: 'A Star Wars',
-        releaseDate: '2018'
-    }];
-
-    return(
-        <div className="app">
-            <ErrorBoundary>
-                <AppContainer
-                productSelected = { productSelected }
-                genre = { genre }
-                data = { data }
-                />
-            </ErrorBoundary>
-        </div>
-    )
+const persistConfig = {
+    key: 'root',
+    storage,
 };
+
+const persistedReducer = persistReducer(persistConfig, reducer);
+
+const store = createStore(persistedReducer, composeWithDevTools(applyMiddleware(thunk)));
+
+const persistor = persistStore(store);
+
+export const App = () =>
+    <div className="app">
+        <ErrorBoundary>
+            <Provider store={store}>
+                <PersistGate loading={null} persistor={persistor}>
+                    <AppContainer/>
+                </PersistGate>
+            </Provider>
+        </ErrorBoundary>
+    </div>;

@@ -1,19 +1,19 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import { ResultList } from '../../../src/result/body/ResultList';
+import {shallow} from 'enzyme';
+import {ResultList} from '../../../src/result/body/ResultList';
 
 describe('ResultList rendering', () => {
     it('renders correctly', () => {
-        const data =
+        const movies =
             [{
                 id: 1,
-                posterPath: 'posterPath',
+                poster_path: 'posterPath',
                 title: 'title',
                 tagline: 'tagline',
-                releaseDate : 'releaseDate'
+                release_date: 'releaseDate'
             }];
         const component = shallow(<ResultList
-        data = { data }
+            movies={movies}
         />);
         expect(component).toMatchSnapshot();
     });

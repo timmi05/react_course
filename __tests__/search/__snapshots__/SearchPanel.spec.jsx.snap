@@ -1,253 +1,541 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SearchPanel rendering renders correctly 1`] = `
-<SearchPanel>
-  <div
-    className="search-panel"
+<Connect(SearchPanel)
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <SearchPanel
+    onSearch={[Function]}
+    searchBy="title"
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
   >
     <div
-      className="search-panel-label"
+      className="search-panel"
     >
-      FINED YOUR MOVIE
-    </div>
-    <div
-      className="search-panel-main"
-    >
-      <input
-        className="search-panel-input"
-        onChange={[Function]}
-        type="text"
-        value=""
-      />
-      <Button
-        classes="search-panel-button"
-        disabled={false}
-        label="SEARCH"
-        onClick={[Function]}
-      >
-        <button
-          className="button search-panel-button"
-          disabled={false}
-          onClick={[Function]}
-          type="submit"
-        >
-          SEARCH
-        </button>
-      </Button>
-    </div>
-    <SearchBySwitch>
       <div
-        className="search-by-switch"
+        className="search-panel-label"
       >
-        <span
-          className="search-by-switch-label"
-        >
-          SEARCH BY 
-        </span>
-        <div
-          className="search-by-switch-buttons"
-        >
-          <Button
-            classes="search-by-switch-button search-by-switch-left-button"
-            disabled={false}
-            label="TITLE"
-            onClick={[Function]}
-          >
-            <button
-              className="button search-by-switch-button search-by-switch-left-button"
-              disabled={false}
-              onClick={[Function]}
-              type="submit"
-            >
-              TITLE
-            </button>
-          </Button>
-          <Button
-            classes="search-by-switch-button search-by-switch-right-button"
-            disabled={true}
-            label="GENRE"
-            onClick={[Function]}
-          >
-            <button
-              className="button search-by-switch-button search-by-switch-right-button"
-              disabled={true}
-              onClick={[Function]}
-              type="submit"
-            >
-              GENRE
-            </button>
-          </Button>
-        </div>
+        FINED YOUR MOVIE
       </div>
-    </SearchBySwitch>
-  </div>
-</SearchPanel>
+      <div
+        className="search-panel-main"
+      >
+        <input
+          className="search-panel-input"
+          type="text"
+        />
+        <Button
+          classes="search-panel-button"
+          label="SEARCH"
+          onClick={[Function]}
+        >
+          <button
+            className="button search-panel-button"
+            onClick={[Function]}
+            type="submit"
+          >
+            SEARCH
+          </button>
+        </Button>
+      </div>
+      <SearchBySwitch
+        searchByGenre={[Function]}
+        searchByTitle={[Function]}
+        searchByTitleDisabled={true}
+      >
+        <div
+          className="search-by-switch"
+        >
+          <span
+            className="search-by-switch-label"
+          >
+            SEARCH BY 
+          </span>
+          <div
+            className="search-by-switch-buttons"
+          >
+            <Button
+              classes="search-by-switch-button search-by-switch-left-button"
+              disabled={true}
+              label="TITLE"
+              onClick={[Function]}
+            >
+              <button
+                className="button search-by-switch-button search-by-switch-left-button"
+                disabled={true}
+                onClick={[Function]}
+                type="submit"
+              >
+                TITLE
+              </button>
+            </Button>
+            <Button
+              classes="search-by-switch-button search-by-switch-right-button"
+              disabled={false}
+              label="GENRE"
+              onClick={[Function]}
+            >
+              <button
+                className="button search-by-switch-button search-by-switch-right-button"
+                disabled={false}
+                onClick={[Function]}
+                type="submit"
+              >
+                GENRE
+              </button>
+            </Button>
+          </div>
+        </div>
+      </SearchBySwitch>
+    </div>
+  </SearchPanel>
+</Connect(SearchPanel)>
 `;
 
 exports[`SearchPanel rendering simulate change of input 1`] = `
-<SearchPanel>
-  <div
-    className="search-panel"
+<Connect(SearchPanel)
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <SearchPanel
+    onSearch={[Function]}
+    searchBy="title"
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
   >
     <div
-      className="search-panel-label"
+      className="search-panel"
     >
-      FINED YOUR MOVIE
-    </div>
-    <div
-      className="search-panel-main"
-    >
-      <input
-        className="search-panel-input"
-        onChange={[Function]}
-        type="text"
-        value=""
-      />
-      <Button
-        classes="search-panel-button"
-        disabled={false}
-        label="SEARCH"
-        onClick={[Function]}
-      >
-        <button
-          className="button search-panel-button"
-          disabled={false}
-          onClick={[Function]}
-          type="submit"
-        >
-          SEARCH
-        </button>
-      </Button>
-    </div>
-    <SearchBySwitch>
       <div
-        className="search-by-switch"
+        className="search-panel-label"
       >
-        <span
-          className="search-by-switch-label"
-        >
-          SEARCH BY 
-        </span>
-        <div
-          className="search-by-switch-buttons"
-        >
-          <Button
-            classes="search-by-switch-button search-by-switch-left-button"
-            disabled={false}
-            label="TITLE"
-            onClick={[Function]}
-          >
-            <button
-              className="button search-by-switch-button search-by-switch-left-button"
-              disabled={false}
-              onClick={[Function]}
-              type="submit"
-            >
-              TITLE
-            </button>
-          </Button>
-          <Button
-            classes="search-by-switch-button search-by-switch-right-button"
-            disabled={true}
-            label="GENRE"
-            onClick={[Function]}
-          >
-            <button
-              className="button search-by-switch-button search-by-switch-right-button"
-              disabled={true}
-              onClick={[Function]}
-              type="submit"
-            >
-              GENRE
-            </button>
-          </Button>
-        </div>
+        FINED YOUR MOVIE
       </div>
-    </SearchBySwitch>
-  </div>
-</SearchPanel>
+      <div
+        className="search-panel-main"
+      >
+        <input
+          className="search-panel-input"
+          type="text"
+        />
+        <Button
+          classes="search-panel-button"
+          label="SEARCH"
+          onClick={[Function]}
+        >
+          <button
+            className="button search-panel-button"
+            onClick={[Function]}
+            type="submit"
+          >
+            SEARCH
+          </button>
+        </Button>
+      </div>
+      <SearchBySwitch
+        searchByGenre={[Function]}
+        searchByTitle={[Function]}
+        searchByTitleDisabled={true}
+      >
+        <div
+          className="search-by-switch"
+        >
+          <span
+            className="search-by-switch-label"
+          >
+            SEARCH BY 
+          </span>
+          <div
+            className="search-by-switch-buttons"
+          >
+            <Button
+              classes="search-by-switch-button search-by-switch-left-button"
+              disabled={true}
+              label="TITLE"
+              onClick={[Function]}
+            >
+              <button
+                className="button search-by-switch-button search-by-switch-left-button"
+                disabled={true}
+                onClick={[Function]}
+                type="submit"
+              >
+                TITLE
+              </button>
+            </Button>
+            <Button
+              classes="search-by-switch-button search-by-switch-right-button"
+              disabled={false}
+              label="GENRE"
+              onClick={[Function]}
+            >
+              <button
+                className="button search-by-switch-button search-by-switch-right-button"
+                disabled={false}
+                onClick={[Function]}
+                type="submit"
+              >
+                GENRE
+              </button>
+            </Button>
+          </div>
+        </div>
+      </SearchBySwitch>
+    </div>
+  </SearchPanel>
+</Connect(SearchPanel)>
 `;
 
-exports[`SearchPanel rendering simulate click on button SEARCH 1`] = `
-<SearchPanel>
-  <div
-    className="search-panel"
+exports[`SearchPanel rendering simulate click of genre button 1`] = `
+<Connect(SearchPanel)
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <SearchPanel
+    onSearch={[Function]}
+    searchBy="title"
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
   >
     <div
-      className="search-panel-label"
+      className="search-panel"
     >
-      FINED YOUR MOVIE
-    </div>
-    <div
-      className="search-panel-main"
-    >
-      <input
-        className="search-panel-input"
-        onChange={[Function]}
-        type="text"
-        value=""
-      />
-      <Button
-        classes="search-panel-button"
-        disabled={true}
-        label="SEARCH"
-        onClick={[Function]}
-      >
-        <button
-          className="button search-panel-button"
-          disabled={true}
-          onClick={[Function]}
-          type="submit"
-        >
-          SEARCH
-        </button>
-      </Button>
-    </div>
-    <SearchBySwitch>
       <div
-        className="search-by-switch"
+        className="search-panel-label"
       >
-        <span
-          className="search-by-switch-label"
-        >
-          SEARCH BY 
-        </span>
-        <div
-          className="search-by-switch-buttons"
-        >
-          <Button
-            classes="search-by-switch-button search-by-switch-left-button"
-            disabled={false}
-            label="TITLE"
-            onClick={[Function]}
-          >
-            <button
-              className="button search-by-switch-button search-by-switch-left-button"
-              disabled={false}
-              onClick={[Function]}
-              type="submit"
-            >
-              TITLE
-            </button>
-          </Button>
-          <Button
-            classes="search-by-switch-button search-by-switch-right-button"
-            disabled={true}
-            label="GENRE"
-            onClick={[Function]}
-          >
-            <button
-              className="button search-by-switch-button search-by-switch-right-button"
-              disabled={true}
-              onClick={[Function]}
-              type="submit"
-            >
-              GENRE
-            </button>
-          </Button>
-        </div>
+        FINED YOUR MOVIE
       </div>
-    </SearchBySwitch>
-  </div>
-</SearchPanel>
+      <div
+        className="search-panel-main"
+      >
+        <input
+          className="search-panel-input"
+          type="text"
+        />
+        <Button
+          classes="search-panel-button"
+          label="SEARCH"
+          onClick={[Function]}
+        >
+          <button
+            className="button search-panel-button"
+            onClick={[Function]}
+            type="submit"
+          >
+            SEARCH
+          </button>
+        </Button>
+      </div>
+      <SearchBySwitch
+        searchByGenre={[Function]}
+        searchByTitle={[Function]}
+        searchByTitleDisabled={true}
+      >
+        <div
+          className="search-by-switch"
+        >
+          <span
+            className="search-by-switch-label"
+          >
+            SEARCH BY 
+          </span>
+          <div
+            className="search-by-switch-buttons"
+          >
+            <Button
+              classes="search-by-switch-button search-by-switch-left-button"
+              disabled={false}
+              label="TITLE"
+              onClick={[Function]}
+            >
+              <button
+                className="button search-by-switch-button search-by-switch-left-button"
+                disabled={false}
+                onClick={[Function]}
+                type="submit"
+              >
+                TITLE
+              </button>
+            </Button>
+            <Button
+              classes="search-by-switch-button search-by-switch-right-button"
+              disabled={true}
+              label="GENRE"
+              onClick={[Function]}
+            >
+              <button
+                className="button search-by-switch-button search-by-switch-right-button"
+                disabled={true}
+                onClick={[Function]}
+                type="submit"
+              >
+                GENRE
+              </button>
+            </Button>
+          </div>
+        </div>
+      </SearchBySwitch>
+    </div>
+  </SearchPanel>
+</Connect(SearchPanel)>
+`;
+
+exports[`SearchPanel rendering simulate click of search button 1`] = `
+<Connect(SearchPanel)
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <SearchPanel
+    onSearch={[Function]}
+    searchBy="title"
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <div
+      className="search-panel"
+    >
+      <div
+        className="search-panel-label"
+      >
+        FINED YOUR MOVIE
+      </div>
+      <div
+        className="search-panel-main"
+      >
+        <input
+          className="search-panel-input"
+          type="text"
+        />
+        <Button
+          classes="search-panel-button"
+          label="SEARCH"
+          onClick={[Function]}
+        >
+          <button
+            className="button search-panel-button"
+            onClick={[Function]}
+            type="submit"
+          >
+            SEARCH
+          </button>
+        </Button>
+      </div>
+      <SearchBySwitch
+        searchByGenre={[Function]}
+        searchByTitle={[Function]}
+        searchByTitleDisabled={true}
+      >
+        <div
+          className="search-by-switch"
+        >
+          <span
+            className="search-by-switch-label"
+          >
+            SEARCH BY 
+          </span>
+          <div
+            className="search-by-switch-buttons"
+          >
+            <Button
+              classes="search-by-switch-button search-by-switch-left-button"
+              disabled={true}
+              label="TITLE"
+              onClick={[Function]}
+            >
+              <button
+                className="button search-by-switch-button search-by-switch-left-button"
+                disabled={true}
+                onClick={[Function]}
+                type="submit"
+              >
+                TITLE
+              </button>
+            </Button>
+            <Button
+              classes="search-by-switch-button search-by-switch-right-button"
+              disabled={false}
+              label="GENRE"
+              onClick={[Function]}
+            >
+              <button
+                className="button search-by-switch-button search-by-switch-right-button"
+                disabled={false}
+                onClick={[Function]}
+                type="submit"
+              >
+                GENRE
+              </button>
+            </Button>
+          </div>
+        </div>
+      </SearchBySwitch>
+    </div>
+  </SearchPanel>
+</Connect(SearchPanel)>
+`;
+
+exports[`SearchPanel rendering simulate click of title button 1`] = `
+<Connect(SearchPanel)
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <SearchPanel
+    onSearch={[Function]}
+    searchBy="title"
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <div
+      className="search-panel"
+    >
+      <div
+        className="search-panel-label"
+      >
+        FINED YOUR MOVIE
+      </div>
+      <div
+        className="search-panel-main"
+      >
+        <input
+          className="search-panel-input"
+          type="text"
+        />
+        <Button
+          classes="search-panel-button"
+          label="SEARCH"
+          onClick={[Function]}
+        >
+          <button
+            className="button search-panel-button"
+            onClick={[Function]}
+            type="submit"
+          >
+            SEARCH
+          </button>
+        </Button>
+      </div>
+      <SearchBySwitch
+        searchByGenre={[Function]}
+        searchByTitle={[Function]}
+        searchByTitleDisabled={true}
+      >
+        <div
+          className="search-by-switch"
+        >
+          <span
+            className="search-by-switch-label"
+          >
+            SEARCH BY 
+          </span>
+          <div
+            className="search-by-switch-buttons"
+          >
+            <Button
+              classes="search-by-switch-button search-by-switch-left-button"
+              disabled={true}
+              label="TITLE"
+              onClick={[Function]}
+            >
+              <button
+                className="button search-by-switch-button search-by-switch-left-button"
+                disabled={true}
+                onClick={[Function]}
+                type="submit"
+              >
+                TITLE
+              </button>
+            </Button>
+            <Button
+              classes="search-by-switch-button search-by-switch-right-button"
+              disabled={false}
+              label="GENRE"
+              onClick={[Function]}
+            >
+              <button
+                className="button search-by-switch-button search-by-switch-right-button"
+                disabled={false}
+                onClick={[Function]}
+                type="submit"
+              >
+                GENRE
+              </button>
+            </Button>
+          </div>
+        </div>
+      </SearchBySwitch>
+    </div>
+  </SearchPanel>
+</Connect(SearchPanel)>
 `;

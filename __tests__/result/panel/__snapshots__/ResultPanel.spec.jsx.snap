@@ -5,6 +5,6 @@ exports[`ResultPanel rendering renders correctly 1`] = `
   className="result-panel"
 >
   <ResultInfo />
-  <ResultSort />
+  <Connect(ResultSort) />
 </div>
 `;

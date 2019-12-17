@@ -1,40 +1,37 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import { ResultInfo } from '../../../src/result/panel/ResultInfo';
+import {shallow} from 'enzyme';
+import {ResultInfo} from '../../../src/result/panel/ResultInfo';
 
 describe('ResultInfo rendering', () => {
     it('renders if productSelected is true', () => {
         const component = shallow(<ResultInfo
-        data = { [] }
-        productSelected = { true }
+            data={[]}
+            isProductSelected={true}
         />);
         expect(component).toMatchSnapshot();
     });
 
     it('renders if productSelected is false, data empty', () => {
         const component = shallow(<ResultInfo
-            data = { [] }
-            productSelected = { false }
+            data={[]}
+            isProductSelected={false}
         />);
         expect(component).toMatchSnapshot();
     });
 
     it('renders if productSelected is false, data empty, genre not empty', () => {
         const component = shallow(<ResultInfo
-            data = { [] }
-            productSelected = { false }
-            genre = { 'genre' }
+            length={0}
+            isProductSelected={false}
+            genre={'genre'}
         />);
         expect(component).toMatchSnapshot();
     });
 
     it('renders if productSelected is false, data not empty', () => {
-        const data = [
-            {object: 'object'}
-        ];
         const component = shallow(<ResultInfo
-            data = { data }
-            productSelected = { false }
+            length={1}
+            isProductSelected={false}
         />);
         expect(component).toMatchSnapshot();
     });

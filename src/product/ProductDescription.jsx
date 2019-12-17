@@ -1,10 +1,6 @@
 import React from 'react';
 
-export const ProductDescription = props => {
-   const { overview } = props;
-   return (
+export const ProductDescription = props =>
     <span className='product-description'>
-        { overview }
-    </span>
-    );
-};
+        {props.overview}
+    </span>;

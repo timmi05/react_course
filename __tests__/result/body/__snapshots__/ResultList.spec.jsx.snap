@@ -6,9 +6,10 @@ exports[`ResultList rendering renders correctly 1`] = `
     className="result-list"
   >
     <ResultItem
+      id={1}
       key="1"
       posterPath="posterPath"
-      releaseDate="releaseDate"
+      releaseDate="rele"
       tagline="tagline"
       title="title"
     />

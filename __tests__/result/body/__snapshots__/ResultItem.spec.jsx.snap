@@ -6,6 +6,7 @@ exports[`ResultItem rendering renders correctly 1`] = `
 >
   <img
     className="result-item-cover"
+    onClick={[Function]}
   />
   <ItemInfo />
 </div>

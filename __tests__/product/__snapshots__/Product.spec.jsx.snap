@@ -7,6 +7,8 @@ exports[`Product rendering renders correctly 1`] = `
   <img
     className="product-cover"
   />
-  <ProductInfo />
+  <ProductInfo
+    movie={Array []}
+  />
 </div>
 `;
